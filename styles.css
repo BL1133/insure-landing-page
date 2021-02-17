@@ -9,7 +9,8 @@
   --neutralDarkGrayishViolet: hsl(273, 4%, 51%);
   --neutralVeryLightGray: hsl(0, 0%, 98%);
 }
-
+/* ----------------------------------- */
+/* Universals */
 *,
 *::before,
 *::after {
@@ -19,5 +20,117 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+  font-size: 62.5%; /*10px/16px = 62.5% -> 1rem = 10px*/
+}
+body {
+  font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 100vw;
+}
+.heading {
+  font-family: 'DM Serif Display', serif;
+}
+.text {
+  line-height: 2.4rem;
+}
+.container-padding {
+  padding-right: 12rem;
+  padding-left: 12rem;
+}
+hr {
+  height: 1px;
+  width: 13rem;
+  background-color: var(--neutralVeryLightGray);
+  margin-bottom: 6rem;
+}
+.btn {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn--light {
+  color: var(--neutralVeryLightGray);
+  border: 2px solid var(--neutralVeryLightGray);
+}
+.btn--dark {
+  color: var(--neutralVeryDarkViolet);
+  border: 2px solid var(--neutralVeryDarkViolet);
+}
+/* ----------------------------------- */
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+.navigation__list {
+  display: flex;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 2.7rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--neutralDarkGrayishViolet);
+  align-self: center;
+}
+.navigation__logo {
+  align-self: center;
+  transform: scale(0.95);
+}
+
+/* ----------------------------------- */
+/* Header */
+.header {
+  background-color: var(--primaryDarkViolet);
+}
+.header__container {
+  display: flex;
+  padding-top: 9rem;
+  padding-bottom: 12rem;
+}
+.header__img-container {
+  width: 100%;
+  position: relative;
+}
+.header__img-container img {
+  width: 47rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+.header__heading--main {
+  color: var(--neutralVeryLightGray);
+  font-size: 6rem;
+  line-height: 5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.header__heading--sub {
+  color: var(--neutralVeryLightGray);
+  margin-bottom: 4rem;
+  margin-right: 5rem;
+}
+
+/* ----------------------------------- */
+/* Features */
+.features {
+  margin-top: 25rem;
 }
