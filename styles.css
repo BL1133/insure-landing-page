@@ -33,6 +33,7 @@ a:visited,
 a:active {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .attribution {
   background-color: var(--neutralVeryLightGray);
@@ -76,14 +77,22 @@ hr {
   cursor: pointer;
   text-decoration: none;
   z-index: 1;
+  cursor: pointer;
+  background-color: transparent;
 }
 .btn--light {
   color: var(--neutralVeryLightGray);
   border: 1px solid var(--neutralVeryLightGray);
 }
+.btn--light:hover {
+  color: var(--neutralVeryLightGray);
+}
 .btn--dark {
   color: var(--neutralVeryDarkViolet);
   border: 1px solid var(--neutralVeryDarkViolet);
+}
+.btn--dark:hover {
+  color: var(--neutralVeryDarkViolet);
 }
 /* ----------------------------------- */
 /* Navigation */
@@ -220,18 +229,18 @@ hr {
   padding-bottom: 3rem;
   position: relative;
   overflow: hidden;
-  z-index: -2;
 }
 .footer::after {
   content: url(./images/bg-pattern-footer-desktop.svg);
   position: absolute;
   top: -3.5rem;
   left: -5rem;
-  z-index: -1;
   transform: scale(0.85);
+  z-index: 0;
 }
 .footer__logo {
   transform: translateX(-0.5px);
+  z-index: 1;
 }
 .footer__heading {
   display: flex;
@@ -250,6 +259,7 @@ hr {
   width: 100%;
   border: none;
   margin-bottom: 3.7rem;
+  z-index: 1;
 }
 .footer__links {
   display: flex;
