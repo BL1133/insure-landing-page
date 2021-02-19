@@ -52,9 +52,9 @@ ul {
 }
 hr {
   height: 1px;
-  width: 15rem;
-  background-color: var(--neutralVeryLightGray);
+  width: 13rem;
   margin-bottom: 5rem;
+  border: none;
 }
 .btn {
   font-size: 1rem;
@@ -92,9 +92,9 @@ hr {
   color: var(--neutralDarkGrayishViolet);
   align-self: center;
 }
-.navigation__logo {
+.logo {
   align-self: center;
-  transform: scale(0.95);
+  transform: scale(0.85);
 }
 
 /* ----------------------------------- */
@@ -129,7 +129,9 @@ hr {
   margin-bottom: 4rem;
   margin-right: 5rem;
 }
-
+.divider--light {
+  background-color: var(--neutralVeryLightGray);
+}
 /* ----------------------------------- */
 /* Features */
 .features {
@@ -159,6 +161,9 @@ hr {
 .features__item img {
   transform: scale(0.8);
 }
+.divider--dark {
+  background-color: var(--neutralDarkGrayishViolet);
+}
 /* Call to action */
 .cta {
   display: flex;
@@ -176,5 +181,25 @@ hr {
   padding-right: 5rem;
   line-height: 4.3rem;
 }
-.cta a {
+
+/* ----------------------------------- */
+/* Footer */
+.footer {
+}
+.footer__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.footer__social img {
+  transform: scale(0.8);
+}
+.footer__social img:not(:last-child) {
+  margin-right: 0.4rem;
+}
+.footer__divider {
+  background-color: rgb(235, 231, 231);
+  height: 1px;
+  width: 100%;
+  border: none;
 }
