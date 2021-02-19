@@ -23,7 +23,7 @@ html {
   font-size: 62.5%; /*10px/16px = 62.5% -> 1rem = 10px*/
 }
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: 'Karla', sans-serif;
   background-color: white;
 }
@@ -83,14 +83,14 @@ hr {
 }
 .btn--light {
   color: var(--neutralVeryLightGray);
-  border: 1px solid var(--neutralVeryLightGray);
+  border: 2px solid var(--neutralVeryLightGray);
 }
 .btn--light:hover {
   color: var(--neutralVeryLightGray);
 }
 .btn--dark {
   color: var(--neutralVeryDarkViolet);
-  border: 1px solid var(--neutralVeryDarkViolet);
+  border: 2px solid var(--neutralVeryDarkViolet);
 }
 .btn--dark:hover {
   color: var(--neutralVeryDarkViolet);
@@ -108,7 +108,7 @@ hr {
 }
 .navigation__item:not(:last-child) {
   margin-right: 2.7rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--neutralDarkGrayishViolet);
@@ -171,27 +171,24 @@ hr {
   transform: translateY(-25rem);
 }
 .features__heading {
-  font-size: 5.9rem;
+  font-size: 7rem;
   font-weight: 400;
   color: var(--neutralVeryDarkViolet);
 }
 .features__row {
   display: flex;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 8rem;
+  margin-bottom: 15rem;
 }
 .features__item-heading {
-  margin-top: 1.3rem;
+  margin-top: 2.6rem;
   margin-bottom: 2rem;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 400;
   color: var(--neutralVeryDarkViolet);
 }
 .features__item:not(:last-child) {
   margin-right: 3rem;
-}
-.features__item img {
-  transform: scale(0.8);
 }
 .divider--dark {
   background-color: var(--neutralDarkGrayishViolet);
@@ -199,7 +196,7 @@ hr {
 /* Call to action */
 .cta {
   display: flex;
-  height: 19rem;
+  height: 25rem;
   background-color: var(--primaryDarkViolet);
   align-items: center;
   padding: 0 7rem 0 8rem;
@@ -210,9 +207,8 @@ hr {
 .cta:after {
   content: url(./images/bg-pattern-how-we-work-desktop.svg);
   position: absolute;
-  right: -3.5rem;
-  top: -3.5rem;
-  transform: scale(0.84);
+  right: -1rem;
+  top: 0;
 }
 .cta__heading {
   color: var(--neutralVeryLightGray);
@@ -220,7 +216,7 @@ hr {
   font-weight: 400;
   width: 65%;
   padding-right: 5rem;
-  line-height: 4.3rem;
+  line-height: 5.2rem;
 }
 
 /* ----------------------------------- */
