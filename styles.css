@@ -25,6 +25,7 @@ html {
 body {
   font-size: 1.5rem;
   font-family: 'Karla', sans-serif;
+  background-color: white;
 }
 a,
 a:hover,
@@ -32,6 +33,9 @@ a:visited,
 a:active {
   color: inherit;
   text-decoration: none;
+}
+.attribution {
+  background-color: var(--neutralVeryLightGray);
 }
 ul {
   list-style: none;
@@ -92,9 +96,9 @@ hr {
   color: var(--neutralDarkGrayishViolet);
   align-self: center;
 }
-.logo {
+.navigation__logo {
   align-self: center;
-  transform: scale(0.85);
+  transform: scale(0.85) translateX(-10.5px);
 }
 
 /* ----------------------------------- */
@@ -184,7 +188,14 @@ hr {
 
 /* ----------------------------------- */
 /* Footer */
-
+.footer {
+  background-color: var(--neutralVeryLightGray);
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.footer__logo {
+  transform: translateX(-0.5px);
+}
 .footer__heading {
   display: flex;
   justify-content: space-between;
