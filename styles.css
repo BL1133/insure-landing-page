@@ -42,6 +42,13 @@ ul {
 }
 .container {
   width: 100vw;
+  position: relative;
+}
+.container::after {
+  content: url(./images/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  top: 40rem;
+  left: 0;
 }
 .heading {
   font-family: 'DM Serif Display', serif;
@@ -68,6 +75,7 @@ hr {
   padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
   text-decoration: none;
+  z-index: 1;
 }
 .btn--light {
   color: var(--neutralVeryLightGray);
@@ -110,6 +118,15 @@ hr {
   display: flex;
   padding-top: 9rem;
   padding-bottom: 12rem;
+  position: relative;
+  overflow: hidden;
+}
+.header__container::after {
+  content: url(./images/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(2rem, -8rem);
 }
 .header__img-container {
   width: 100%;
@@ -176,6 +193,15 @@ hr {
   align-items: center;
   padding: 0 7rem 0 8rem;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.cta:after {
+  content: url(./images/bg-pattern-how-we-work-desktop.svg);
+  position: absolute;
+  right: -3.5rem;
+  top: -3.5rem;
+  transform: scale(0.84);
 }
 .cta__heading {
   color: var(--neutralVeryLightGray);
@@ -192,6 +218,17 @@ hr {
   background-color: var(--neutralVeryLightGray);
   padding-top: 4rem;
   padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+.footer::after {
+  content: url(./images/bg-pattern-footer-desktop.svg);
+  position: absolute;
+  top: -3.5rem;
+  left: -5rem;
+  z-index: -1;
+  transform: scale(0.85);
 }
 .footer__logo {
   transform: translateX(-0.5px);
