@@ -317,6 +317,9 @@ hr {
     display: flex;
     flex-direction: column;
     place-items: center;
+    margin-top: 15rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   .features__row {
     flex-direction: column;
@@ -324,8 +327,46 @@ hr {
   .features__item:not(:last-child) {
     margin-right: initial;
   }
+  .features__item {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  .features__item img {
+    width: 10rem;
+  }
+  .features__heading {
+    font-size: 4.5rem;
+    margin-top: -2rem;
+  }
+  .features__item-text {
+    text-align: center;
+  }
+  /* cta */
   .cta {
     flex-direction: column;
+    height: 35rem;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  .cta__heading {
+    font-size: 4rem;
+    width: 100%;
+    line-height: 5.2rem;
+    text-align: center;
+    padding-right: initial;
+    margin-bottom: 3rem;
+    z-index: 1;
+  }
+  .cta:after {
+    content: url(./images/bg-pattern-how-we-work-mobile.svg);
+    position: absolute;
+    right: -1rem;
+    top: 0;
   }
 }
 
