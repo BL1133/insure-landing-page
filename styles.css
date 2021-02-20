@@ -54,7 +54,11 @@ ul {
 }
 @media only screen and (max-width: 865px) {
   .container::after {
-    display: none;
+    content: url(./images/bg-pattern-intro-right-mobile.svg);
+    right: 0;
+    top: 102vh;
+    left: initial;
+    position: absolute;
   }
 }
 .heading {
@@ -202,18 +206,45 @@ hr {
 @media only screen and (max-width: 875px) {
   .header__container {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 120vh;
     padding: 0;
+  }
+  .divider--light {
+    display: none;
   }
   .header__heading-container {
     width: 100%;
     margin-right: initial;
-    height: 30vh;
+    height: 40%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+  .header__heading-container::after {
+    content: url(./images/bg-pattern-intro-left-mobile.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header__heading-container .btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header__heading--main {
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 5rem;
+  }
+  .header__heading--sub {
+    text-align: center;
+    margin-right: initial;
   }
   .header__img-container {
     width: 100%;
     position: relative;
-    height: 70vh;
+    height: 60%;
   }
   .header__img-container img {
     position: absolute;
