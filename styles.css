@@ -396,6 +396,7 @@ hr {
 }
 .footer__social img {
   transform: scale(0.8);
+  z-index: 1;
 }
 .footer__social img:not(:last-child) {
   margin-right: 0.4rem;
@@ -435,10 +436,45 @@ hr {
   color: var(--neutralVeryDarkViolet);
 }
 @media only screen and (max-width: 875px) {
+  .footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  .footer::after {
+    content: url(./images/bg-pattern-footer-mobile.svg);
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    transform: scale(1.1);
+  }
   .footer__heading {
     flex-direction: column;
+    margin-top: 10rem;
   }
+  .footer__logo {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+  .footer__social img:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .footer__divider {
+    width: 85vw;
+    margin-top: 4rem;
+  }
+
+  /* links */
+  .footer__links-column:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer__links-column {
+    margin: 0 0 2rem 0;
+  }
+
   .footer__links {
     flex-direction: column;
+    text-align: center;
   }
 }
