@@ -122,29 +122,34 @@ hr {
 /* ----------------------------------- */
 /* Header */
 .header {
-  height: 80vh;
-  overflow: hidden;
+  position: relative;
+}
+.header::after {
+  content: url(./images/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
 }
 .header__container {
   display: flex;
   background-color: var(--primaryDarkViolet);
   padding-top: 10rem;
   height: 60rem;
-  position: relative;
 }
-.header__container::after {
-  content: url(./images/bg-pattern-intro-right-desktop.svg);
-  position: absolute;
-  right: 0rem;
-  top: -8rem;
+.header__heading-container {
+  width: 50%;
+  margin-right: 4rem;
 }
 .header__img-container {
-  width: 100%;
+  width: 50%;
   position: relative;
 }
 .header__img-container img {
-  width: 53rem;
+  width: 100%;
+  min-width: 40rem;
+  max-width: 60rem;
   position: absolute;
+  align-self: flex-end;
   top: 0rem;
   right: 0rem;
 }
@@ -168,7 +173,6 @@ hr {
 .features {
   margin-top: 25rem;
   margin-bottom: 10rem;
-  transform: translateY(-25rem);
 }
 .features__heading {
   font-size: 7rem;
