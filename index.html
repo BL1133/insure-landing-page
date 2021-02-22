@@ -55,20 +55,34 @@
       <!-- Mobile -->
       <nav class="navigation--mobile">
         <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" class="navigation__overlay-button"
-          ><span></span
-        ></label>
-        <div class="navigation__overlay">
-          <ul class="navigation__list--mobile">
-            <li class="navigation__item--mobile">
-              <a href="#">How we work</a>
-            </li>
-            <li class="navigation__item--mobile"><a href="#">Blog</a></li>
-            <li class="navigation__item--mobile"><a href="#">Account</a></li>
-            <li class="navigation__item--mobile">
-              <a href="#" class="btn btn--light">View Plans</a>
-            </li>
-          </ul>
+        <label for="overlay-input" class="navigation__overlay-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#FFF"
+                stroke="#2C2830"
+                stroke-width="1.5"
+                d="M.75.75h30.5v30.5H.75z"
+              />
+              <g fill="#2C2830">
+                <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
+              </g>
+            </g>
+          </svg>
+        </label>
+        <div class="navigation__overlay-container">
+          <div class="navigation__overlay">
+            <ul class="navigation__list--mobile">
+              <li class="navigation__item--mobile">
+                <a href="#">How we work</a>
+              </li>
+              <li class="navigation__item--mobile"><a href="#">Blog</a></li>
+              <li class="navigation__item--mobile"><a href="#">Account</a></li>
+              <li class="navigation__item--mobile">
+                <a href="#" class="btn btn--light">View Plans</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
