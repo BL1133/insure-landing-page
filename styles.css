@@ -1,6 +1,6 @@
 /*  Primary */
 :root {
-  --primaryDarkViolet: #2d2640;
+  --primaryDarkViolet: hsl(256, 25%, 20%);
   --primaryGrayishBlue: hsl(216, 30%, 68%);
 
   /* Neutral */
@@ -126,7 +126,48 @@ hr {
   justify-content: space-between;
   height: 6rem;
 }
-.navigation__list {
+/* Mobile Nav */
+.navigation--mobile {
+  position: fixed;
+  display: none;
+  top: 6rem;
+  z-index: 100;
+  background-color: var(--primaryDarkViolet);
+  width: 100vw;
+  height: 94vh;
+}
+.navigation__overlay {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  left: 50vw;
+  top: 44vh;
+  transform: translate(-50%, -50%);
+}
+.navigation__overlay-button {
+  z-index: 100;
+}
+.navigation__list--mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.navigation__item--mobile {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--neutralVeryLightGray);
+  align-self: center;
+  /* margin-bottom: 4rem; */
+}
+.navigation__item--mobile .btn {
+  font-size: 2.4rem;
+  padding: 1.5rem 10rem 1.5rem 10rem;
+}
+/* Desktop nav */
+.navigation__list--desktop {
   display: flex;
 }
 .navigation__item:not(:last-child) {
@@ -150,12 +191,16 @@ hr {
 }
 
 @media only screen and (max-width: 875px) {
-  .navigation__item {
+  .navigation__list--desktop {
     display: none;
   }
+  .navigation--mobile {
+    display: initial;
+  }
   .navigation {
+    position: fixed;
     background-color: white;
-    z-index: 5;
+    z-index: 100;
     width: 100vw;
   }
 }
@@ -322,6 +367,9 @@ hr {
   padding-right: 5rem;
   line-height: 5.2rem;
 }
+.cta .btn {
+  z-index: 0;
+}
 @media only screen and (max-width: 875px) {
   .features {
     display: flex;
@@ -418,6 +466,7 @@ hr {
 }
 .footer__social-icon:hover {
   fill: #2d2640;
+  transform: translateY(-1px);
   cursor: pointer;
 }
 .footer__divider {
@@ -495,5 +544,8 @@ hr {
   .footer__links {
     flex-direction: column;
     text-align: center;
+  }
+  .footer__links--link a:hover {
+    color: var(--primaryGrayishBlue);
   }
 }

@@ -38,18 +38,38 @@
   <body>
     <div class="container">
       <!-- Navigation -->
+      <!-- Desktop -->
       <nav class="navigation container-padding">
         <div class="navigation__logo">
           <img src="./images/logo.svg" alt="" />
         </div>
-        <ul class="navigation__list">
+        <ul class="navigation__list--desktop">
           <li class="navigation__item"><a href="#">How we work</a></li>
           <li class="navigation__item"><a href="#">Blog</a></li>
           <li class="navigation__item"><a href="#">Account</a></li>
           <li class="navigation__item">
-            <a href="#" class="btn btn--dark">View Plans</a>
+            <a href="#" class="btn btn--light">View Plans</a>
           </li>
         </ul>
+      </nav>
+      <!-- Mobile -->
+      <nav class="navigation--mobile">
+        <input type="checkbox" id="overlay-input" />
+        <label for="overlay-input" class="navigation__overlay-button"
+          ><span></span
+        ></label>
+        <div class="navigation__overlay">
+          <ul class="navigation__list--mobile">
+            <li class="navigation__item--mobile">
+              <a href="#">How we work</a>
+            </li>
+            <li class="navigation__item--mobile"><a href="#">Blog</a></li>
+            <li class="navigation__item--mobile"><a href="#">Account</a></li>
+            <li class="navigation__item--mobile">
+              <a href="#" class="btn btn--light">View Plans</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <!-- Header -->
