@@ -172,8 +172,8 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 .navigation__overlay-button {
   position: absolute;
   display: none;
-  top: 1.7vh;
-  right: 6vw;
+  top: 1.47rem;
+  right: 3rem;
   z-index: 100;
   align-self: center;
   transform: scale(1.1);
@@ -193,6 +193,7 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   align-self: center;
 }
 .navigation__item--mobile .btn {
+  white-space: nowrap;
   font-size: 2.4rem;
   padding: 1.5rem 10rem 1.5rem 10rem;
 }
@@ -292,7 +293,7 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 @media only screen and (max-width: 875px) {
   .header__container {
     flex-direction: column-reverse;
-    height: 120vh;
+    height: 100rem;
     padding: 0;
   }
   .divider--light {
@@ -345,6 +346,17 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   }
   .header::after {
     display: none;
+  }
+}
+@media only screen and (max-height: 645px) {
+  .header__img-container {
+    height: 30%;
+  }
+  .header__heading-container {
+    height: 70%;
+  }
+  .navigation__item--mobile .btn {
+    padding: 1.5rem 7rem 1.5rem 7rem;
   }
 }
 /* ----------------------------------- */
