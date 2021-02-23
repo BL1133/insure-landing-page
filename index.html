@@ -39,7 +39,7 @@
     <div class="container">
       <!-- Navigation -->
       <!-- Desktop -->
-      <nav class="navigation navigation--desktop container-padding">
+      <nav class="navigation container-padding">
         <div class="navigation__logo">
           <img src="./images/logo.svg" alt="" />
         </div>
@@ -53,67 +53,60 @@
         </ul>
       </nav>
       <!-- Mobile -->
-      <nav class="navigation--mobile">
-        <nav class="navigation container-padding">
-          <div class="navigation__logo">
-            <img src="./images/logo.svg" alt="" />
-          </div>
-        </nav>
-        <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" class="navigation__overlay-button">
-          <svg
-            class="navigation__overlay-button--hamburger"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <path
-                fill="#FFF"
-                stroke="#2C2830"
-                stroke-width="1.5"
-                d="M.75.75h30.5v30.5H.75z"
-              />
-              <g fill="#2C2830">
-                <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
-              </g>
+      <input type="checkbox" id="overlay-input" />
+      <label for="overlay-input" class="navigation__overlay-button">
+        <svg
+          class="navigation__overlay-button--hamburger"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path
+              fill="#FFF"
+              stroke="#2C2830"
+              stroke-width="1.5"
+              d="M.75.75h30.5v30.5H.75z"
+            />
+            <g fill="#2C2830">
+              <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
             </g>
-          </svg>
-          <svg
-            class="navigation__overlay-button--close"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <path
-                fill="#FFF"
-                stroke="#2C2830"
-                stroke-width="1.5"
-                d="M.75.75h30.5v30.5H.75z"
-              />
-              <g fill="#2C2830">
-                <path d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z" />
-                <path d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z" />
-              </g>
+          </g>
+        </svg>
+        <svg
+          class="navigation__overlay-button--close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path
+              fill="#FFF"
+              stroke="#2C2830"
+              stroke-width="1.5"
+              d="M.75.75h30.5v30.5H.75z"
+            />
+            <g fill="#2C2830">
+              <path d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z" />
+              <path d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z" />
             </g>
-          </svg>
-        </label>
-        <div class="navigation__overlay-container">
-          <div class="navigation__overlay">
-            <ul class="navigation__list--mobile">
-              <li class="navigation__item--mobile">
-                <a href="#">How we work</a>
-              </li>
-              <li class="navigation__item--mobile"><a href="#">Blog</a></li>
-              <li class="navigation__item--mobile"><a href="#">Account</a></li>
-              <li class="navigation__item--mobile">
-                <a href="#" class="btn btn--light">View Plans</a>
-              </li>
-            </ul>
-          </div>
+          </g>
+        </svg>
+      </label>
+      <div class="navigation__overlay-container">
+        <div class="navigation__overlay">
+          <ul class="navigation__list--mobile">
+            <li class="navigation__item--mobile">
+              <a href="#">How we work</a>
+            </li>
+            <li class="navigation__item--mobile"><a href="#">Blog</a></li>
+            <li class="navigation__item--mobile"><a href="#">Account</a></li>
+            <li class="navigation__item--mobile">
+              <a href="#" class="btn btn--light">View Plans</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
 
       <!-- Header -->
       <header class="header">

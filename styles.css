@@ -101,7 +101,7 @@ hr {
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
-  z-index: 100;
+  z-index: 1000;
 }
 .btn--light,
 .btn--light:visited {
@@ -152,14 +152,14 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   position: fixed;
   display: none;
   z-index: 100;
-  width: 100vw;
-  height: 100vh;
 }
 .navigation__overlay-container {
+  position: fixed;
   background-color: var(--primaryDarkViolet);
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   visibility: hidden;
+  z-index: 99;
 }
 .navigation__overlay {
   position: absolute;
@@ -170,13 +170,15 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   transform: translate(-50%, -50%);
 }
 .navigation__overlay-button {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 1.47rem;
   right: 3rem;
   z-index: 100;
-  align-self: center;
   transform: scale(1.1);
+}
+.navigation__overlay-button:hover {
+  cursor: pointer;
 }
 .navigation__list--mobile {
   display: flex;
@@ -226,10 +228,6 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   .navigation__list--desktop {
     display: none;
   }
-  .navigation--desktop {
-    display: none;
-  }
-  .navigation--mobile,
   .navigation__overlay-button {
     display: initial;
   }
@@ -550,6 +548,9 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   margin-bottom: 1rem;
   color: var(--neutralVeryDarkViolet);
 }
+.footer__links--link a:hover {
+  color: var(--primaryGrayishBlue);
+}
 @media only screen and (max-width: 875px) {
   .footer {
     padding: 0;
@@ -591,8 +592,5 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   .footer__links {
     flex-direction: column;
     text-align: center;
-  }
-  .footer__links--link a:hover {
-    color: var(--primaryGrayishBlue);
   }
 }
