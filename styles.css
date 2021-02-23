@@ -172,8 +172,8 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 .navigation__overlay-button {
   position: absolute;
   display: none;
-  top: 0;
-  right: 0;
+  top: 1.7vh;
+  right: 6vw;
   z-index: 100;
   align-self: center;
   transform: scale(1.1);
@@ -223,6 +223,9 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 
 @media only screen and (max-width: 875px) {
   .navigation__list--desktop {
+    display: none;
+  }
+  .navigation--desktop {
     display: none;
   }
   .navigation--mobile,
