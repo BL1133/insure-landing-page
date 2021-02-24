@@ -534,15 +534,11 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 }
 .footer__links {
   display: flex;
-  justify-content: flex-start;
+  gap: 14vw;
 }
 .footer__links-column {
-  margin-right: 8rem;
   white-space: nowrap;
   z-index: 1;
-}
-.footer__links-column:not(:first-child) {
-  margin-left: 8rem;
 }
 .footer__links--heading,
 .footer__links--link {
@@ -603,5 +599,6 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
   .footer__links {
     flex-direction: column;
     text-align: center;
+    gap: initial;
   }
 }
