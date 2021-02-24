@@ -356,10 +356,13 @@ input[type='checkbox']:checked + label > .navigation__overlay-button--close {
 }
 @media only screen and (max-height: 645px) {
   .header__img-container {
-    height: 30%;
+    height: 43%;
   }
   .header__heading-container {
-    height: 70%;
+    height: 57%;
+  }
+  .header__heading--main .header__container {
+    height: 95rem;
   }
   .navigation__item--mobile .btn {
     padding: 1.5rem 7rem 1.5rem 7rem;
